@@ -1,0 +1,193 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f1f7f8;
+  color: #1c3a4c;
+  line-height: 1.6;
+}
+
+header.header {
+  background-color: #0a6c74;
+  padding: 1rem;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.logo {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #aad8dd;
+}
+
+.hero {
+  background: url('agua-crise.jpg') no-repeat center center/cover;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+}
+
+.hero-content {
+  background-color: rgba(10, 108, 116, 0.7);
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 600px;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-block;
+  margin-top: 1rem;
+  transition: background 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #2fb4c8;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #2393a5;
+}
+
+.btn-secondary {
+  background-color: #ffffff;
+  color: #0a6c74;
+  border: 2px solid #0a6c74;
+}
+
+.btn-secondary:hover {
+  background-color: #f0fafa;
+}
+
+.sobre {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 0 2rem;
+}
+
+.sobre h2,
+.sobre h3 {
+  color: #0a6c74;
+  margin-bottom: 1rem;
+}
+
+.sobre p {
+  margin-bottom: 1rem;
+}
+
+.cards-integrantes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 12px;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.card h3 {
+  margin-top: 0.5rem;
+}
+
+.card a {
+  display: inline-block;
+  margin: 0.2rem 0.3rem;
+  color: #0a6c74;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+footer.footer {
+  background-color: #0a6c74;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .hero {
+    height: auto;
+    padding: 4rem 1rem;
+  }
+
+  .hero-content {
+    width: 100%;
+  }
+
+  .cards-integrantes {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+}
