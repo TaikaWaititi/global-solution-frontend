@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (form) {
     form.addEventListener("submit", function (e) {
       e.preventDefault();
+      // Informações de contato
 
       const nome = document.getElementById("nome").value.trim();
       const email = document.getElementById("email").value.trim();
